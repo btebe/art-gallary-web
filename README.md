@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://btebe.github.io/art-gallary-web/src/
+- Solution URL: [solution URL](https://github.com/btebe/art-gallary-web)
+- Live Site URL: [live site URL](https://btebe.github.io/art-gallary-web/src/)
 
 ## My process
 
