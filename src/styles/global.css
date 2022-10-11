@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap');
+
+:root {
+  /* colors*/
+  --peach: #D5966C;
+  --black: #151515;
+  --grey: #444444;
+  --white: #FFFFFF;
+
+  /*font-sizes*/
+  --fs-900: 96px;
+  --fs-800: 70px;
+  --fs-700: 60px;
+  --fs-650: 55px;
+  --fs-600: 50px;
+  --fs-500: 30px;
+  --fs-400: 22px;
+  --fs-300: 20px;
+  --fs-200: 18px;
+  --fs-100: 16px;
+
+  --fs-primary-heading: var(--fs-700);
+  --fs-secondary-heading: var(--fs-600);
+  --fs-location-heading: var(--fs-600);
+  --fs-location-sub: var(--fs-500);
+  --fs-body: var(--fs-200);
+  --fs-btn: var(--fs-300);
+  --fs-footer-body: var(--fs-100);
+  --fs-logo: var(--fs-500);
+
+  /* line height */
+
+  --lh-900: 88px;
+  --lh-800: 70px;
+  --lh-750: 56px;
+  --lh-700: 50px;
+  --lh-600: 45px;
+  --lh-500: 36px;
+  --lh-400: 32px;
+  --lh-300: 28px;
+  --lh-200: 26px;
+  --lh-100: 24px;
+
+  --lh-primary-heading: var(--lh-750);
+  --lh-secondary-heading: var(--lh-700);
+  --lh-location-heading: var(--lh-600);
+  --lh-location-sub: var(--lh-500);
+  --lh-body: var(--lh-300);
+  --lh-btn: var(--lh-100);
+  --lh-footer-body: var(--lh-200);
+  --lh-logo: var(--lh-400);
+
+  /* font-weight */
+
+  --fw-300:900;
+  --fw-200:800;
+  --fw-100:300;
+
+  /* font-families */
+
+  --ff-big-shoulder: 'Big Shoulders Display', cursive;
+  --ff-outfit: 'Outfit', sans-serif;
+}
+
+/* root responsiveness */
+
+/* tablet */
+
+@media (min-width: 600px) {
+  :root {
+    --fs-primary-heading: var(--fs-800);
+    --fs-location-heading: var(--fs-650);
+    --lh-primary-heading: var(--lh-800);
+    --lh-location-heading: var(--lh-700);
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1440px) {
+  :root {
+    --fs-primary-heading: var(--fs-900);
+    --fs-location-heading: var(--fs-800);
+    --fs-secondary-heading: var(--fs-700);
+    --lh-primary-heading: var(--lh-900);
+    --lh-secondary-heading: var(--lh-750);
+    --lh-location-heading: var(--lh-800);
+    --lh-location-sub: var(--lh-600);
+  }
+}
+
+/* ------------- */
+/* Reset         */
+/* ------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins    */
+
+body,
+h1,
+h2,
+h3,
+p,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-weight: var(--fw-900);
+}
+
+p,
+span {
+  font-weight: var(--fw-300);
+}
+
+/* Remove list styles on ul, ol elements with a list role,
+ which suggests default styling will be removed */
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: var(--line-height-p);
+  font-family: var(--ff-kumbh-sans);
+  font-size: var(--fs-b-s);
+  background-color: var(--White);
+  color: var(--grey);
+  /* to strech out elements */
+  display: grid;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------- */
+/* Utility Classes  */
+/* ------------- */
+
+.container{
+  padding-inline: 1em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* colors */
+
+.text-light{
+  color: var(--white);
+}
+
+.text-accent{
+  color: var(--peach);
+}
+
+.text-dark{
+  color: var(--black);
+}
+
+.text-nuetral{
+  color: var(--grey);
+}
+
+/* bg color */
+
+.bg-light{
+  background-color: var(--White);
+}
+
+.bg-accent{
+  background-color: var(--peach);
+}
+
+.bg-dark{
+  background-color: var(--black);
+}
+
+.bg-nuetral{
+  background-color: var(--grey);
+}
+
+/* typography */
+
+/* font family */
+
+.ff-primary{
+  font-family: var(--ff-big-shoulder);
+}
+
+.ff-secondary{
+  font-family: var(--ff-outfit);
+}
+
+/* font size */
+
+.fs-primary-heading{
+  font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading{
+  font-size: var(--fs-secondary-heading);
+}
+
+.fs-location-heading{
+  font-size: var(--fs-location-heading);
+}
+
+.fs-location-sub{
+  font-size: var(--fs-location-sub);
+}
+
+.fs-body{
+  font-size: var(--fs-body);
+}
+
+.fs-btn{
+  font-size: var(--fs-btn);
+}
+
+.fs-footer-body{
+  font-size: var(--fs-footer-body);
+}
+
+.fs-logo{
+  font-size: var(--fs-logo);
+}
+
+/* line height */
+
+.lh-primary-heading{
+  line-height: var(--lh-primary-heading);
+}
+
+.lh-secondary-heading{
+  line-height: var(--lh-secondary-heading);
+}
+
+.lh-location-heading{
+  line-height: var(--lh-location-heading);
+}
+
+.lh-location-sub{
+  line-height: var(--lh-location-sub);
+}
+
+.lh-body{
+  line-height: var(--lh-body);
+}
+
+.lh-btn{
+  line-height: var(--lh-btn);
+}
+
+.lh-footer-body{
+  line-height: var(--lh-footer-body);
+}
+
+.lh-logo{
+  line-height: var(--lh-logo);
+}
+
+/* font weight */
+
+.fw-300{
+  font-weight: var(--fw-300);
+}
+
+.fw-200{
+  font-weight: var(--fw-200);
+}
+
+.fw-100{
+  font-weight: var(--fw-100);
+}
+
+/* responsiveness */
+
+/* tablet */
+
+@media (min-width: 600px){
+  .container{
+    padding-inline: 2em;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1000px){
+  .container{
+    padding-inline: 5em;
+  }
+}
