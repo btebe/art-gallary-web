@@ -131,7 +131,7 @@
 
 /* desktop */
 
-@media (min-width: 900px){
+@media (min-width: 1000px){
   .hero-section > picture::before{
     content: '';
     display: inline-block;
