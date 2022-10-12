@@ -357,6 +357,6 @@ select {
 
 @media (min-width: 1000px){
   .container{
-    padding-inline: 5em;
+    padding-inline: 5rem;
   }
 }
