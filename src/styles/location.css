@@ -15,10 +15,10 @@ body{
   display: grid;
   grid-template-columns: 1fr 0.3fr;
   align-items: center;
+  height: fit-content !important;
   justify-items: center;
   cursor: pointer;
   width: fit-content;
-  height: fit-content;
   letter-spacing: 1.5px;
 }
 
@@ -27,7 +27,6 @@ body{
 }
 
 .btn > .btn-text {
-  height: 100%;
   width: 100%;
   padding: 1rem;
   background-color: var(--black);
