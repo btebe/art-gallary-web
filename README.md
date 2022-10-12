@@ -54,7 +54,7 @@ Nothing new in this project. It's everything i have come acrossed before. The la
 To see how you can add code snippets, see below:
 
 ```css
-.footer-section > ul > li:hover > a > img {
+.footer-section > div > ul > li:hover > a > img {
   filter: invert(0.21) sepia(1) saturate(7) hue-rotate(302.4deg) brightness(0.86);
 }
 ```
