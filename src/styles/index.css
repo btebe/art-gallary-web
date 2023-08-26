@@ -22,8 +22,8 @@
 }
 
 .btn > .btn-text {
-  height: 100%;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
   padding: 1rem;
   background-color: var(--black);
 
